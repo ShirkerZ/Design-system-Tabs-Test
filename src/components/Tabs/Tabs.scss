@@ -1,0 +1,25 @@
+@use '../../theme/spacing' as *;
+@use '../../theme/breakpoint' as *;
+
+.tabs {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: $spacing2XS;
+  width: 100%;
+
+  &.pill {
+    gap: $spacing2XS;
+  }
+  &.underline {
+    gap: $spacingL;
+  }
+  @media screen and (min-width: $tablet) {
+    &.pill {
+      gap: $spacingXS;
+    }
+    &.underline {
+      gap: $spacingXL;
+    }
+  }
+}

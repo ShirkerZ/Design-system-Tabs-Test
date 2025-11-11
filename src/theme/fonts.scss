@@ -1,0 +1,18 @@
+@use 'sass:map';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+$fontPrimary: Inter, sans-serif;
+
+// Font sizes map
+$fontSizes: (
+  small: 0.75rem,
+  medium: 0.875rem,
+);
+
+$lineHeights: (
+  normal: 1.5,
+);
+
+$fontSizeSmall: map.get($fontSizes, small);
+$fontSizeMedium: map.get($fontSizes, medium);
+$lineHeightNormal: map.get($lineHeights, normal);

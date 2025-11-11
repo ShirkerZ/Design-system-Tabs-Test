@@ -1,0 +1,35 @@
+@use '../../theme/fonts' as *;
+@use '../../theme/colors' as *;
+@use '../../theme/spacing' as *;
+@use '../../theme/breakpoint' as *;
+@use 'sass:map';
+
+@mixin background-variant($variant) {
+  background-color: map.get($colors, $variant);
+}
+
+.badge {
+  padding: $spacing4XS $spacing3XS;
+  font-size: $fontSizeSmall;
+  line-height: $lineHeightNormal;
+  font-family: $fontPrimary;
+  font-weight: 700;
+  display: flex;
+  width: fit-content;
+  border-radius: $spacingXS;
+  color: $colorInverse;
+  
+  @media screen and (min-width: $tablet) {
+    padding: $spacing3XS $spacing2XS;
+  }
+
+  &.neutral {
+    @include background-variant(neutral);
+  }
+  &.positive {
+    @include background-variant(positive);
+  }
+  &.negative {
+    @include background-variant(negative);
+  }
+}

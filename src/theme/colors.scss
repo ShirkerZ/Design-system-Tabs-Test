@@ -1,0 +1,27 @@
+@use "sass:map";
+
+$colors: (
+  neutral: #f1f1f7,
+  positive: #b1ffc7,
+  negative: #ffbfb1,
+  white: #FFFFFF,
+  inverse: #1B2134,
+  inverseHover: #343A4E,
+  inverseActive: #585D71,
+  outline: #D3D3DC,
+  outlineHover: #C4C5CF, 
+  surfaceHover: #F6F6FA,
+  surfaceActive: #F1F1F7,
+);
+
+$colorNeutral: map.get($colors, neutral);
+$colorPositive: map.get($colors, positive);
+$colorNegative: map.get($colors, negative);
+$colorWhite: map.get($colors, white);
+$colorInverse: map.get($colors, inverse);
+$colorInverseHover: map.get($colors, inverseHover);
+$colorInverseActive: map.get($colors, inverseActive);
+$colorOutline: map.get($colors, outline);
+$colorOutlineHover: map.get($colors, outlineHover);
+$colorSurfaceHover: map.get($colors, surfaceHover);
+$colorSurfaceActive: map.get($colors, surfaceActive);

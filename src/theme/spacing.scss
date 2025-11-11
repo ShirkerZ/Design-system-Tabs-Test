@@ -1,0 +1,26 @@
+@use 'sass:map';
+
+$spacing: (
+  0: 0,
+  4xs: 0.125rem,
+  3xs: 0.25rem,
+  2xs: 0.5rem,
+  xs: 0.75rem,
+  s: 1rem,
+  m: 1.25rem,
+  l: 1.5rem,
+  xl: 2rem,
+  2xl: 3rem,
+);
+
+$spacing0: map.get($spacing, 0);
+$spacing4XS: map.get($spacing, 4xs);
+$spacing3XS: map.get($spacing, 3xs);
+$spacing2XS: map.get($spacing, 2xs);
+$spacingXS: map.get($spacing, xs);
+$spacingS: map.get($spacing, s);
+$spacingM: map.get($spacing, m);
+$spacingL: map.get($spacing, l);
+$spacingXL: map.get($spacing, xl);
+$spacing2XL: map.get($spacing, 2xl);
+ 
